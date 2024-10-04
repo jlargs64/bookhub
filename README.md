@@ -20,7 +20,8 @@ We are using LocalStack to emulate AWS Services like RDS (Postgres DB), MSK (Kaf
 
 ## Set up
 
-1. `docker-compose up -d`
+1. Fill out `.env` file in `core/core/.env` using the `.env.example` file as a template.
+1. `docker-compose --env-file backend/core/core/.env up -d`
 1. `cd terraform`
 1. `terraform init`
 1. `terraform apply`
